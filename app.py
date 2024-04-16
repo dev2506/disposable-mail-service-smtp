@@ -25,3 +25,5 @@ def initialize():
         "userId": "445sa1185943g55",
         "email": "firstmail@mytempmail.com"
     })
+
+app.run()

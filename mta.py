@@ -25,7 +25,7 @@ queue.add_policy(AddReceivedHeader())
 queue.add_policy(RecipientDomainSplit())
 
 # Listen for messages on port 25.
-edge = SmtpEdge(('127.0.0.1', 25), queue)
+edge = SmtpEdge(('0.0.0.0', 25), queue)
 edge.start()
 try:
     # for k, v in queue_storage.env_db.items():
