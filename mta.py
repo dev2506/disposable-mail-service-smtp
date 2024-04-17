@@ -30,6 +30,7 @@ edge.start()
 try:
     # for k, v in queue_storage.env_db.items():
     #     print(k, vars(v))
+    print("Before starting greenlet")
     edge.get()
 except KeyboardInterrupt:
     pass
